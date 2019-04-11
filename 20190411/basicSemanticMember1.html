@@ -45,7 +45,8 @@ a:active { color:blue; background-color:transparent; text-decoration:none; }
     <li><a href="./jspintro.html">JSP</a></li></ul>
    </nav>
 <section>  <!-- main --> 
- <form id="memberForm" action="https://jspwork.herokuapp.com/ex/regCheck.jsp" method="post">
+ <section id="memberForm" action="https://jspwork.herokuapp.com/ex/regCheck.jsp" method="post">
+ <fieldset><legend>회원정보</legend>
  <fieldset><legend>이름/이메일</legend>
   <label for="stud_name">이름</label>
   <input id="stud_name" type="text" name="stud_name" size="20" maxlength="50" required/><br/>
@@ -70,12 +71,13 @@ a:active { color:blue; background-color:transparent; text-decoration:none; }
   <label for="stud_hobby1">낚시</label>
   <input id="stud_hobby1" type="checkbox" name="stud_hobby" value="낚시" />
   <label for="stud_hobby2">바둑</label>
-  <input id="stud_hobby2" type="checkbox" name="stud_hobby" value="낚시" />
+  <input id="stud_hobby2" type="checkbox" name="stud_hobby" value="바둑" />
   <label for="stud_hobby3">독서</label>
-  <input id="stud_hobby3" type="checkbox" name="stud_hobby" value="낚시" />
-  </fieldset>
+  <input id="stud_hobby3" type="checkbox" name="stud_hobby" value="독서" />
+ </fieldset>
   <input type="submit" value="회원등록">
   <input type="reset" value="취소">
+ </fieldset>
  </form>
  </section>   <!-- /main -->
   <aside>
