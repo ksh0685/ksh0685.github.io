@@ -1,0 +1,43 @@
+<!doctype html> <!--  Seasonalfood.html  -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scala=1"/>
+<title>폼 제철 음식</title>
+<script>
+function type(obj) {
+var spring = [ "달래", "우엉", "냉이", "바지락", "딸기", "두릅", "꼬막", "더덕", "쭈꾸미", "장어", "매실", "쑥", "도미", "멍게", "다슬기", "취나물", "키조개", "참다랑어", "소라", "씀바귀", "미더덕", "한라봉" ];
+var summer = [ "옥수수", "토마토", "전복", "감자", "고구마", "블루베리", "포도", "장어", "도라지", "수박", "매실", "복숭아", "참나물", "갈치", "참외", "다슬기", "참다랑어", "복분자", "소라", "자두" ];
+var fall = [ "굴", "사과", "게", "토마토", "홍합", "꼬막", "배추", "고등어", "전복", "옥수수", "감자", "고구마", "무", "꽁치", "늙은호박", "대하", "블루베리", "삼치", "유자", "배", "참나물", "귤", "갈치", "석류", "도미", "가리비", "은행", "광어", "해삼", "과메기" ];
+var winter = [ "우엉", "굴", "바지락", "사과", "딸기", "홍합", "꼬막", "더덕", "배추", "무", "늙은호박", "대하", "삼치", "유자", "명태", "아귀", "귤", "석류", "도미", "가리비", "광어", "과메기", "한라봉" ];
+var target = document.getElementById("season");
+ if(obj.value == "spring") var k = spring;
+ if(obj.value == "summer") var k = summer;
+ if(obj.value == "fall") var k = fall;
+ if(obj.value == "winter") var k = winter;
+ target.options.length = 0;
+for ( x in k) {
+var opt = document.createElement("option");
+opt.value = k[x];
+opt.innerHTML = k[x];
+target.appendChild(opt);
+}
+}
+</script>
+</head>
+<body>
+ <section>
+  <fieldset><legend>계절별 제철 음식</legend>
+   <label for="seasonx">계절</label>
+   <select id="seasonx" name="season" onchange="season(this)">
+   <option value="spring" selected>봄</option>
+   <option value="summer">여름</option>
+   <option value="fall">가을</option>
+   <option value="winter">겨울</option>
+   </select>
+   <label for="food">음식</label>
+   <select id="foodx" name="food">
+   </select>
+  </fieldset>
+ </section>
+</body></html>
