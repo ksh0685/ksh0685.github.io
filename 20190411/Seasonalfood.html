@@ -11,10 +11,10 @@ var summer = [ "옥수수", "토마토", "전복", "감자", "고구마", "블�
 var fall = [ "굴", "사과", "게", "토마토", "홍합", "꼬막", "배추", "고등어", "전복", "옥수수", "감자", "고구마", "무", "꽁치", "늙은호박", "대하", "블루베리", "삼치", "유자", "배", "참나물", "귤", "갈치", "석류", "도미", "가리비", "은행", "광어", "해삼", "과메기" ];
 var winter = [ "우엉", "굴", "바지락", "사과", "딸기", "홍합", "꼬막", "더덕", "배추", "무", "늙은호박", "대하", "삼치", "유자", "명태", "아귀", "귤", "석류", "도미", "가리비", "광어", "과메기", "한라봉" ];
 var target = document.getElementById("season");
- if(obj.value == "1") var k = spring;
- if(obj.value == "2") var k = summer;
- if(obj.value == "3") var k = fall;
- if(obj.value == "4") var k = winter;
+ if(obj.value == "S1") var k = spring;
+ if(obj.value == "S2") var k = summer;
+ if(obj.value == "S3") var k = fall;
+ if(obj.value == "S4") var k = winter;
  target.options.length = 0;
 for ( x in k) {
 var opt = document.createElement("option");
@@ -30,10 +30,10 @@ target.appendChild(opt);
   <fieldset><legend>계절별 제철 음식</legend>
    <label for="seasonx">계절</label>
    <select id="seasonx" name="season" onchange="season(this)">
-   <option value="1">봄</option>
-   <option value="2">여름</option>
-   <option value="3">가을</option>
-   <option value="4">겨울</option>
+   <option value="S1">봄</option>
+   <option value="S2">여름</option>
+   <option value="S3">가을</option>
+   <option value="S4">겨울</option>
    </select>
    <label for="food">음식</label>
    <select id="foodx" name="food">
