@@ -12,9 +12,9 @@ var fall = [ "굴", "사과", "게", "토마토", "홍합", "꼬막", "배추", 
 var winter = [ "우엉", "굴", "바지락", "사과", "딸기", "홍합", "꼬막", "더덕", "배추", "무", "늙은호박", "대하", "삼치", "유자", "명태", "아귀", "귤", "석류", "도미", "가리비", "광어", "과메기", "한라봉" ];
 var target = document.getElementById("foodx");
  if(obj.value == "S1") var k = spring;
- if(obj.value == "S2") var k = summer;
- if(obj.value == "S3") var k = fall;
- if(obj.value == "S4") var k = winter;
+else if(obj.value == "S2") var k = summer;
+else if(obj.value == "S3") var k = fall;
+else if(obj.value == "S4") var k = winter;
  target.options.length = 0;
 for ( x in k) {
 var opt = document.createElement("option");
