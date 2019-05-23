@@ -15,7 +15,7 @@ document.write("일반변수:"+"이름="+name+", 나이="+age+", 나이>20="+fla
 function MyClass(){
 this.name = "홍길동"; this.age=21; this.flag=true;
 this.nextAge=function(a,b){
-document.write("b+"년 후 나이는 "+(a+b)+"입니다."+"<br/>");}
+document.write(b+"년 후 나이는 "+(a+b)+"입니다."+"<br/>");}
 }
 var person=new MyClass();
 document.write("객체변수:"+"이름="+person.name+", 나이="+person.age+", 나이>20="+person.flag+"<br/>");
@@ -26,4 +26,5 @@ $("footer").css("color", "#"+color16);
 })
    </script></section>
   <footer>
- <p>&copy; 20XX Made by Korea. All rights reserved.</p></footer></body></html>
+ <p>&copy; 20XX Made by Korea. All rights reserved.</p>
+</footer></body></html>
